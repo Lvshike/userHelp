@@ -1,0 +1,56 @@
+{
+  "name": "user-help-mobile",
+  "description": "开发平台移动端帮助框",
+  "version": "1.0.7",
+  "author": "lvsk <1018490252@qq.com>",
+  "license": "MIT",
+  "private": false,
+  "main": "/lib/userHelp.js",
+  "module": "lib/userHelp.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --env --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --env --progress --hide-modules",
+    "lib": "cross-env NODE_ENV=production webpack --env.lib --progress --hide-modules"
+  },
+  "files": [
+    "lib/userHelp.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "element-ui": "^2.13.2",
+    "regenerator-runtime": "^0.13.7",
+    "vant": "^2.10.2",
+    "vue": "^2.5.11"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "axios": "^0.19.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^7.1.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "babel-plugin-component": "^1.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "element-resize-detector": "^1.2.1",
+    "file-loader": "^1.1.4",
+    "js-cookie": "^2.2.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
